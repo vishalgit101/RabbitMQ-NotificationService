@@ -49,7 +49,7 @@ This project simulates a **Notification System** where users trigger notificatio
 ---
 
 ### 2️⃣ Notification Saved to PostgreSQL  
-![Saved Notifications](./Images/2gettingsavednotifications.png)
+![Saved Notifications](./Images/2Gettingsavednotifications.png)
 
 ---
 
