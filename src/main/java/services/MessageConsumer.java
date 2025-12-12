@@ -31,7 +31,7 @@ public class MessageConsumer {
 		
 		try {
 			// Simulating the Email sending time with thread sleep
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			
 			Notification notification = new Notification();
 			notification.setContent(message.getContent());
