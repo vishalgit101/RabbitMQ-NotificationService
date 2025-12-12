@@ -21,26 +21,25 @@ This project simulates a **Notification System** where users trigger notificatio
 
 ---
 
-## 🏗️ Architecture Overview
+       REST API (Spring Boot)
+               |
+               | Publishes
+               v
+        ----------------------
+        |    Topic Exchange   |
+        ----------------------
+           |               |
+ routingKey:notification.email  routingKey:notification.sms
+           |               |
+       email.queue       sms.queue
+           |               |
+      EmailHandler       SMSHandler
+               \           /
+                \         /
+                 +-------+
+                 | PostgreSQL |
+                 +-----------+
 
-    REST API (Spring Boot)
-            |
-            | Publishes
-            v
-    ----------------------
-    |   Topic Exchange   |
-    ----------------------
-       |             |
- routingKey      routingKey
-notification.email notification.sms
-| |
-v v
-email.queue sms.queue
-| |
-v v
-EmailHandler SMSHandler
-| |
-+--------> PostgreSQL <--------+
 
 
 ---
