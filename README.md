@@ -20,7 +20,7 @@ This project simulates a **Notification System** where users trigger notificatio
 - Visual RabbitMQ queue activity graphs  
 
 ---
-
+```
 REST API (Spring Boot)
        |
        | Publishes
@@ -40,7 +40,7 @@ routingKey.email   routingKey.sms
      +-------v-------+
              |
          PostgreSQL (for logging / persistence)
-
+```
 ---
 
 ## 📦 Tech Stack
