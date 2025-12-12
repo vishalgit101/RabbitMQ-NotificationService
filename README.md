@@ -29,19 +29,6 @@ This project simulates a **Notification System** where users trigger notificatio
         |    Topic Exchange   |
         ----------------------
            |               |
- routingKey:notification.email  routingKey:notification.sms
-           |               |
-       email.queue       sms.queue
-           |               |
-      EmailHandler       SMSHandler
-               \           /
-                \         /
-                 +-------+
-                 | PostgreSQL |
-                 +-----------+
-
-
-
 ---
 
 ## 📦 Tech Stack
